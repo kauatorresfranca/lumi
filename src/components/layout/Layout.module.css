@@ -1,0 +1,67 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(246, 245, 240, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
+}
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+}
+.brand { display: flex; align-items: center; gap: var(--space-2); text-decoration: none; }
+.brandText { display: flex; flex-direction: column; line-height: 1; font-family: var(--font-heading); }
+.brandText strong { font-size: 1.5rem; letter-spacing: 0.12em; color: var(--color-navy); }
+.brandText small { font-size: 0.6rem; letter-spacing: 0.3em; color: var(--color-gold); margin-top: 4px; }
+
+.nav { display: none; gap: var(--space-4); }
+.nav a { text-decoration: none; font-weight: 500; color: var(--color-navy); }
+.nav a:hover { color: var(--color-gold); }
+.headerCta { display: none; }
+.headerCta a { padding: var(--space-2) var(--space-4); }
+@media (min-width: 768px) {
+  .nav { display: flex; }
+  .headerCta { display: block; }
+}
+
+.footer a { color: var(--color-gold-light); text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+.footer { background: var(--color-navy); color: #d9dfe6; font-size: 0.92rem; }
+.footerGrid { display: grid; gap: var(--space-4); }
+.footerGrid p { display: flex; align-items: center; gap: var(--space-2); margin: 0 0 var(--space-2); }
+.footerBrand { font-family: var(--font-heading); letter-spacing: 0.15em; color: var(--color-gold-light); }
+.copy { opacity: 0.7; }
+@media (min-width: 768px) { .footerGrid { grid-template-columns: 1fr 1.6fr; } .copy { grid-column: 1 / -1; } }
+
+.floating {
+  position: fixed;
+  right: var(--space-3);
+  bottom: var(--space-3);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 60px;
+  height: 60px;
+  padding: 0 16px;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--color-whatsapp);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 28px rgba(31, 168, 85, 0.45);
+  animation: pulse 2.6s infinite;
+}
+.floatingLabel { display: none; }
+@media (min-width: 768px) { .floatingLabel { display: inline; } }
+@keyframes pulse {
+  0% { box-shadow: 0 10px 28px rgba(31, 168, 85, 0.45), 0 0 0 0 rgba(31, 168, 85, 0.5); }
+  70% { box-shadow: 0 10px 28px rgba(31, 168, 85, 0.45), 0 0 0 16px rgba(31, 168, 85, 0); }
+  100% { box-shadow: 0 10px 28px rgba(31, 168, 85, 0.45), 0 0 0 0 rgba(31, 168, 85, 0); }
+}

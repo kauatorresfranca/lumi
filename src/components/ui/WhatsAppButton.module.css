@@ -1,0 +1,17 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-radius: 999px;
+  background: var(--color-navy);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+}
+.button:hover { background: var(--color-gold); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.light { background: var(--color-gold-light); color: var(--color-navy); }
+.light:hover { background: #fff; }

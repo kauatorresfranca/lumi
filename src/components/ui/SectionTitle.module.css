@@ -1,0 +1,14 @@
+.head { max-width: 640px; margin-bottom: var(--space-5); }
+.head h2 { margin-top: 0; }
+.head h2::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 3px;
+  margin-top: var(--space-3);
+  background: var(--color-gold);
+  border-radius: 2px;
+}
+.head p { color: var(--color-muted); font-size: 1.05rem; }
+.light h2 { color: #fff; }
+.light p { color: var(--color-gold-light); }
