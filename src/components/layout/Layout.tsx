@@ -5,6 +5,7 @@ import { team } from '../../data/treatments'
 import WhatsAppIcon from '../ui/WhatsAppIcon'
 import WhatsAppButton from '../ui/WhatsAppButton'
 import styles from './Layout.module.css'
+import { track } from '../../lib/analytics'
 
 export default function Layout() {
   return (
@@ -12,7 +13,7 @@ export default function Layout() {
       <header className={styles.header}>
         <div className={`container ${styles.bar}`}>
           <Link to="/" className={styles.brand}>
-            <img src="/img/lumi-simbolo.png" width={44} height={44} alt="" />
+            <img src="/simbolo.png" width={44} height={44} alt="" />
             <span className={styles.brandText}>
               <strong>LUMI</strong>
               <small>ODONTOLOGIA</small>
@@ -44,6 +45,7 @@ export default function Layout() {
             <p><Clock size={16} /> {site.hours}</p>
             <p><Phone size={16} /> {site.whatsappDisplay}</p>
           </div>
+          <p>{team.luiz.name} ({team.luiz.cro}) · {team.camila.name} ({team.camila.cro})</p>
           <p className={styles.copy}>© {new Date().getFullYear()} {site.name}</p>
         </div>
       </footer>
@@ -54,9 +56,9 @@ export default function Layout() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Falar pelo WhatsApp"
+        onClick={() => track('whatsapp_click', { cta_label: 'flutuante' })}
       >
-        <WhatsAppIcon size={28} />
-        <span className={styles.floatingLabel}>WhatsApp</span>
+        <WhatsAppIcon size={32} />
       </a>
     </>
   )

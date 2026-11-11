@@ -43,25 +43,27 @@
   right: var(--space-3);
   bottom: var(--space-3);
   z-index: 20;
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  min-width: 60px;
+  display: grid;
+  place-items: center;
+  width: 60px;
   height: 60px;
-  padding: 0 16px;
-  justify-content: center;
-  border-radius: 999px;
-  background: var(--color-whatsapp);
+  border-radius: 50%;
+  background: #25d366;
   color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 10px 28px rgba(31, 168, 85, 0.45);
-  animation: pulse 2.6s infinite;
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.45);
+  transition: transform 0.2s;
 }
-.floatingLabel { display: none; }
-@media (min-width: 768px) { .floatingLabel { display: inline; } }
-@keyframes pulse {
-  0% { box-shadow: 0 10px 28px rgba(31, 168, 85, 0.45), 0 0 0 0 rgba(31, 168, 85, 0.5); }
-  70% { box-shadow: 0 10px 28px rgba(31, 168, 85, 0.45), 0 0 0 16px rgba(31, 168, 85, 0); }
-  100% { box-shadow: 0 10px 28px rgba(31, 168, 85, 0.45), 0 0 0 0 rgba(31, 168, 85, 0); }
+.floating:hover { transform: scale(1.06); }
+.floating::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 50%;
+  background: #25d366;
+  animation: ripple 2s ease-out infinite;
+}
+@keyframes ripple {
+  0% { transform: scale(1); opacity: 0.55; }
+  100% { transform: scale(1.7); opacity: 0; }
 }

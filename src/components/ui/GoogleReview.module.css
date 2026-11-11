@@ -1,0 +1,20 @@
+.card {
+  margin: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+.head { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2); }
+.avatar, .initial { flex: none; width: 44px; height: 44px; border-radius: 50%; }
+.avatar { object-fit: cover; }
+.initial { display: grid; place-items: center; background: var(--color-navy); color: var(--color-gold-light); font-weight: 700; }
+.who { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.who figcaption { font-weight: 600; }
+.who small { color: var(--color-muted); }
+.stars { display: flex; gap: 2px; color: #fbbc04; margin-bottom: var(--space-2); }
+.card blockquote { margin: 0; color: var(--color-text); }
+.text { white-space: pre-line; }
+.clamp { display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+.toggle { margin-top: var(--space-2); padding: 0; border: 0; background: none; color: var(--color-gold); font-weight: 600; cursor: pointer; }

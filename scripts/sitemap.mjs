@@ -1,7 +1,7 @@
-import { readdirSync, statSync, writeFileSync } from 'node:fs'
+import { readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
 import { join, relative, sep } from 'node:path'
 
-const DOMAIN = (process.env.SITE_URL || 'https://SEU-DOMINIO.com.br').replace(/\/$/, '')
+const DOMAIN = (process.env.SITE_URL || 'https://lumiodontomaceio.com.br').replace(/\/$/, '')
 const DIST = 'dist'
 
 function walk(dir) {
@@ -12,7 +12,7 @@ function walk(dir) {
 }
 
 const urls = walk(DIST)
-  .filter((file) => file.endsWith('.html'))
+  .filter((file) => file.endsWith('.html') && !readFileSync(file, 'utf8').includes('noindex'))
   .map((file) => relative(DIST, file).split(sep).join('/'))
   .filter((path) => path !== '404.html')
   .map((path) => {

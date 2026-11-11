@@ -1,0 +1,9 @@
+.placeholder {
+  background: var(--color-tint);
+  border: 1px dashed var(--color-gold-light);
+  border-radius: var(--radius);
+  display: grid;
+  place-items: center;
+  color: var(--color-muted);
+}
+.img { display: block; width: 100%; height: auto; object-fit: cover; border-radius: var(--radius); }

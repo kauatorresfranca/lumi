@@ -131,3 +131,50 @@
 .final { background: var(--color-navy); text-align: left; }
 .final .container { padding-top: var(--space-6); padding-bottom: var(--space-6); }
 .note { margin: calc(var(--space-2) * -1) 0 var(--space-4); font-size: 0.88rem; color: var(--color-muted); }
+
+/* faixa de urgência */
+.live { display: flex; align-items: center; gap: var(--space-2); }
+.dot { flex: none; width: 10px; height: 10px; border-radius: 50%; background: #3ddc84; animation: blink 1.8s infinite; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+/* hero com foto */
+.heroImg { position: relative; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 22px; box-shadow: var(--shadow-md); }
+.floatBadge {
+  position: absolute;
+  left: -8px;
+  bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--color-navy);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+}
+
+/* equipe */
+.initials {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--color-navy);
+  color: var(--color-gold-light);
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+}
+.avatarImg { flex: none; width: 96px; height: 96px; border-radius: 50%; object-fit: cover; }
+
+/* localização e CTAs */
+.mapFrame { width: 100%; aspect-ratio: 16 / 7; border: 0; border-radius: var(--radius); margin: var(--space-4) 0; }
+.locActions { margin-top: var(--space-5); }
+.ctaRow { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.final .outline { border-color: var(--color-gold-light); color: #fff; }
+.final .outline:hover { background: var(--color-gold-light); color: var(--color-navy); }
+.cro { margin: 0 0 var(--space-1); font-size: 0.85rem; font-weight: 600; color: var(--color-gold); }
