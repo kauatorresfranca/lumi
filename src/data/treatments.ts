@@ -23,7 +23,7 @@ export const treatments: Treatment[] = [
     name: 'Urgência odontológica',
     keyword: 'urgência odontológica 24h em Maceió',
     dentists: ['luiz', 'camila'],
-    ready: false,
+    ready: true,
     intro: 'Dor de dente, dente quebrado ou inchaço no rosto? A Lumi Odontologia faz atendimento de urgência em Maceió para avaliar o seu caso, aliviar a dor e indicar o tratamento adequado. Chame no WhatsApp e conte o que está acontecendo.',
     forWhom: 'Quem está com dor de dente intensa ou persistente, dente fraturado, inchaço na gengiva ou no rosto, sangramento que não para depois de uma extração, restaurações ou prótese que quebraram ou se soltaram, Aparelho ortodôntico causando dor, machucados ou desconforto, Traumas e acidentes envolvendo dentes ou a estrutura da boca.',
     steps: [
@@ -43,7 +43,7 @@ export const treatments: Treatment[] = [
     name: 'Limpeza dental',
     keyword: 'limpeza dental em Maceió',
     dentists: ['luiz', 'camila'],
-    ready: false,
+    ready: true,
     intro: 'A limpeza dental remove placa bacteriana e tártaro que a escovação sozinha não alcança, ajudando a prevenir cáries e inflamações na gengiva. É um cuidado simples e importante para a saúde da boca.',
     forWhom: 'Qualquer pessoa, como parte da rotina de cuidados. É especialmente importante para quem percebe tártaro, mau hálito ou gengiva que sangra.',
     steps: [
@@ -62,7 +62,7 @@ export const treatments: Treatment[] = [
     name: 'Restauração dental',
     keyword: 'restauração dental em Maceió',
     dentists: ['luiz', 'camila'],
-    ready: false,
+    ready: true,
     intro: 'A restauração repara dentes afetados por cárie, fraturas ou desgaste, devolvendo forma e função à mordida. Na Lumi Odontologia, o dentista avalia o seu caso e explica o que será feito antes de começar.',
     forWhom: 'Quem tem um dente com cárie, quebrado, lascado ou com restauração antiga danificada.',
     steps: [
@@ -81,7 +81,7 @@ export const treatments: Treatment[] = [
     name: 'Extração dentária',
     keyword: 'extração de dente em Maceió',
     dentists: ['luiz', 'camila'],
-    ready: false,
+    ready: true,
     intro: 'A extração dentária é indicada quando o dente não pode ser recuperado ou quando sua remoção faz parte de um plano de tratamento. Antes de qualquer decisão, o dentista avalia as alternativas e explica cada etapa.',
     forWhom: 'Quem tem dente com cárie muito extensa, fratura que não permite restauração, infecção ou mobilidade, ou um dente que precisa ser removido para outro tratamento. A indicação é definida na avaliação.',
     steps: [
@@ -100,7 +100,7 @@ export const treatments: Treatment[] = [
     name: 'Extração de siso',
     keyword: 'extração de siso em Maceió',
     dentists: ['luiz'],
-    ready: false,
+    ready: true,
     intro: 'Os sisos, ou terceiros molares, nem sempre têm espaço para nascer. Quando causam dor, infecção ou problemas nos dentes vizinhos, a extração pode ser indicada. Na Lumi Odontologia, o dentista avalia o seu caso e explica cada etapa antes de começar.',
     forWhom: 'Quem sente dor ou inchaço na região do fundo da boca, tem siso parcialmente nascido, cáries ou infecções recorrentes na região, ou apresenta pressão sobre os dentes vizinhos. A indicação é sempre definida na avaliação.',
     steps: [
@@ -119,7 +119,7 @@ export const treatments: Treatment[] = [
     name: 'Clareamento dental',
     keyword: 'clareamento dental em Maceió',
     dentists: ['luiz', 'camila'],
-    ready: false,
+    ready: true,
     intro: 'O clareamento dental é um procedimento estético que busca clarear a cor dos dentes. Antes de começar, o dentista avalia a saúde da boca e indica a técnica mais adequada para o seu caso.',
     forWhom: 'Quem deseja dentes mais claros e está com a saúde bucal em dia. Cáries e gengivite devem ser tratadas antes, e a indicação é definida na avaliação.',
     steps: [
@@ -138,7 +138,7 @@ export const treatments: Treatment[] = [
     name: 'Prótese fixa',
     keyword: 'prótese fixa em Maceió',
     dentists: ['luiz', 'camila'],
-    ready: false,
+    ready: true,
     intro: 'A prótese fixa repõe ou recompõe dentes com peças cimentadas, que não são removidas pelo paciente. Pode incluir coroas e pontes, conforme o planejamento de cada caso.',
     forWhom: 'Quem perdeu um ou mais dentes, ou tem dentes muito danificados, e busca uma solução fixa. A indicação depende da avaliação da boca e dos dentes de apoio.',
     steps: [
@@ -157,7 +157,7 @@ export const treatments: Treatment[] = [
     name: 'Próteses totais e parciais',
     keyword: 'prótese dentária em Maceió',
     dentists: ['luiz'],
-    ready: false,
+    ready: true,
     intro: 'As próteses totais e parciais repõem dentes ausentes para ajudar na mastigação, na fala e na aparência do sorriso. Na Lumi Odontologia, cada prótese é planejada para o seu caso e ajustada com acompanhamento.',
     forWhom: 'Quem perdeu todos os dentes de uma arcada (prótese total) ou apenas alguns dentes (prótese parcial removível) e busca repor essas ausências.',
     steps: [
@@ -177,7 +177,7 @@ export const treatments: Treatment[] = [
     name: 'Coroa em resina e porcelana',
     keyword: 'coroa dentária em Maceió',
     dentists: ['luiz'],
-    ready: false,
+    ready: true,
     intro: 'A coroa dentária é uma cobertura que recompõe a forma, a função e a proteção de um dente muito danificado ou que já passou por tratamento de canal. Pode ser feita em resina ou em porcelana, conforme cada caso.',
     forWhom: 'Quem tem dente muito destruído por cárie, fraturado ou enfraquecido, e precisa de proteção e reforço.',
     steps: [
@@ -196,7 +196,7 @@ export const treatments: Treatment[] = [
     name: 'Facetas em resina',
     keyword: 'facetas em resina em Maceió',
     dentists: ['camila'],
-    ready: false,
+    ready: true,
     intro: 'As facetas em resina são camadas finas de resina composta aplicadas na frente do dente para melhorar a forma, a cor ou pequenas imperfeições. A indicação depende de uma avaliação individual.',
     forWhom: 'Quem deseja corrigir pequenos espaços, lascas ou alterações de cor e formato, com a saúde bucal em dia.',
     steps: [
@@ -215,7 +215,7 @@ export const treatments: Treatment[] = [
     name: 'Facetas em porcelana',
     keyword: 'facetas em porcelana em Maceió',
     dentists: ['luiz', 'camila'],
-    ready: false,
+    ready: true,
     intro: 'As facetas em porcelana são lâminas finas, produzidas em laboratório e coladas na frente dos dentes para melhorar a forma, a cor e o aspecto do sorriso. A indicação depende de planejamento cuidadoso.',
     forWhom: 'Quem deseja alterar forma, tamanho ou cor dos dentes da frente e tem saúde bucal adequada. Nem todos os casos são indicados, e isso é definido na avaliação.',
     steps: [
@@ -234,7 +234,7 @@ export const treatments: Treatment[] = [
     name: 'Harmonização orofacial e botox',
     keyword: 'harmonização orofacial e botox em Maceió',
     dentists: ['camila'],
-    ready: false,
+    ready: true,
     intro: 'A harmonização orofacial reúne procedimentos realizados por dentistas habilitados — incluindo a aplicação de toxina botulínica (botox) — para equilibrar aspectos estéticos e funcionais do rosto e da boca. Cada plano é individual e começa por uma avaliação.',
     forWhom: 'Pessoas adultas que desejam conhecer opções estéticas ou funcionais para o rosto e a boca, com acompanhamento profissional. A avaliação considera histórico de saúde, expectativas e segurança.',
     steps: [
@@ -254,7 +254,7 @@ export const treatments: Treatment[] = [
     name: 'Aparelho ortodôntico',
     keyword: 'aparelho ortodôntico em Maceió',
     dentists: ['camila'],
-    ready: false,
+    ready: true,
     intro: 'O aparelho ortodôntico ajuda a alinhar os dentes e a corrigir a mordida. Na Lumi Odontologia, o plano é definido depois de uma avaliação completa, com acompanhamento ao longo de todo o tratamento.',
     forWhom: 'Crianças, adolescentes e adultos com dentes desalinhados, espaços entre os dentes ou problemas de mordida. A indicação depende de avaliação.',
     steps: [
@@ -274,7 +274,7 @@ export const treatments: Treatment[] = [
     name: 'Alinhador dental',
     keyword: 'alinhador dental em Maceió',
     dentists: ['camila'],
-    ready: false,
+    ready: true,
     intro: 'O alinhador dental é uma alternativa ao aparelho fixo, feito com placas transparentes e parciais trocadas em sequência. A indicação depende de uma avaliação ortodôntica.',
     forWhom: 'Quem busca alinhar os dentes de forma discreta e consegue seguir a rotina de uso orientada pelo dentista. Nem todos os casos são indicados para alinhador.',
     steps: [
@@ -293,7 +293,7 @@ export const treatments: Treatment[] = [
     name: 'Odontopediatria',
     keyword: 'dentista infantil em Maceió',
     dentists: ['camila'],
-    ready: false,
+    ready: true,
     intro: 'A odontopediatria cuida da saúde bucal de bebês, crianças e adolescentes, com uma abordagem acolhedora e adaptada a cada idade. O objetivo é prevenir problemas e criar uma relação tranquila com o dentista.',
     forWhom: 'Crianças e adolescentes, desde os primeiros dentes, para prevenção, acompanhamento e tratamento. Também para crianças com medo ou ansiedade.',
     steps: [
