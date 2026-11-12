@@ -25,7 +25,7 @@ export const treatments: Treatment[] = [
     dentists: ['luiz', 'camila'],
     ready: true,
     intro: 'Dor de dente, dente quebrado ou inchaço no rosto? A Lumi Odontologia faz atendimento de urgência em Maceió para avaliar o seu caso, aliviar a dor e indicar o tratamento adequado. Chame no WhatsApp e conte o que está acontecendo.',
-    forWhom: 'Quem está com dor de dente intensa ou persistente, dente fraturado, inchaço na gengiva ou no rosto, sangramento que não para depois de uma extração, restaurações ou prótese que quebraram ou se soltaram, Aparelho ortodôntico causando dor, machucados ou desconforto, Traumas e acidentes envolvendo dentes ou a estrutura da boca.',
+    forWhom: 'Quem está com dor de dente intensa ou persistente, dente fraturado, inchaço na gengiva ou no rosto, sangramento que não para depois de uma extração, restaurações ou prótese que quebraram ou se soltaram, aparelho ortodôntico causando dor, machucados ou desconforto, traumas e acidentes envolvendo dentes ou a estrutura da boca.',
     steps: [
       'Você chama no WhatsApp e explica o que está sentindo.',
       'Combinamos o melhor momento para o atendimento.',
@@ -134,22 +134,23 @@ export const treatments: Treatment[] = [
     ],
   },
   {
-    slug: 'protese-fixa',
-    name: 'Prótese fixa',
-    keyword: 'prótese fixa em Maceió',
+    slug: 'protese-fixa-e-coroa',
+    name: 'Prótese fixa e coroa em resina e porcelana',
+    keyword: 'prótese fixa e coroa dentária em Maceió',
     dentists: ['luiz', 'camila'],
     ready: true,
-    intro: 'A prótese fixa repõe ou recompõe dentes com peças cimentadas, que não são removidas pelo paciente. Pode incluir coroas e pontes, conforme o planejamento de cada caso.',
-    forWhom: 'Quem perdeu um ou mais dentes, ou tem dentes muito danificados, e busca uma solução fixa. A indicação depende da avaliação da boca e dos dentes de apoio.',
+    intro: 'A prótese fixa e a coroa dentária repõem ou reconstroem dentes danificados com peças cimentadas, que não são removidas pelo paciente. Podem incluir pontes e coroas em resina ou porcelana para devolver forma, função e proteção ao sorriso.',
+    forWhom: 'Quem perdeu um ou mais dentes ou tem dentes muito destruídos por cárie, fraturados ou enfraquecidos (como após tratamento de canal) e busca uma solução fixa e resistente. A indicação depende da avaliação clínica.',
     steps: [
       'Avaliação clínica e exames de imagem.',
-      'Planejamento e explicação das opções.',
-      'Preparo dos dentes e moldagem.',
-      'Prova, ajustes e cimentação da prótese.',
+      'Planejamento e escolha do material ideal (resina ou porcelana).',
+      'Preparo dos dentes, moldagem e coroa provisória, quando necessária.',
+      'Prova, ajustes e cimentação definitiva da prótese ou coroa.',
     ],
     faq: [
-      { q: 'Qual a diferença entre prótese fixa e removível?', a: 'A fixa fica cimentada e só o dentista a retira. A removível pode ser retirada pelo paciente para higienização.' },
-      { q: 'Os dentes vizinhos precisam ser preparados?', a: 'Em alguns tipos de prótese, sim. Isso é definido e explicado no planejamento.' },
+      { q: 'Qual a diferença entre prótese fixa e removível?', a: 'A fixa (como coroas e pontes) fica cimentada e só o dentista a retira. A removível pode ser retirada pelo paciente para higienização.' },
+      { q: 'Resina ou porcelana?', a: 'A escolha depende da posição do dente, da mordida, da estética desejada e do planejamento definido na avaliação.' },
+      { q: 'Os dentes vizinhos precisam ser preparados?', a: 'Em coroas unitárias, apenas o próprio dente recebe preparo. Em pontes fixas, os dentes de apoio também são preparados, conforme explicado no planejamento.' },
     ],
   },
   {
@@ -170,25 +171,6 @@ export const treatments: Treatment[] = [
     faq: [
       { q: 'Preciso de um tempo para me adaptar à prótese?', a: 'Sim, é comum haver um período de adaptação. Os retornos servem para ajustar o conforto e o encaixe.' },
       { q: 'Qual a diferença entre prótese total e parcial?', a: 'A total substitui todos os dentes de uma arcada. A parcial substitui apenas alguns dentes, apoiando-se nos que permanecem.' },
-    ],
-  },
-  {
-    slug: 'coroa-em-resina-e-porcelana',
-    name: 'Coroa em resina e porcelana',
-    keyword: 'coroa dentária em Maceió',
-    dentists: ['luiz'],
-    ready: true,
-    intro: 'A coroa dentária é uma cobertura que recompõe a forma, a função e a proteção de um dente muito danificado ou que já passou por tratamento de canal. Pode ser feita em resina ou em porcelana, conforme cada caso.',
-    forWhom: 'Quem tem dente muito destruído por cárie, fraturado ou enfraquecido, e precisa de proteção e reforço.',
-    steps: [
-      'Avaliação clínica e exame de imagem.',
-      'Preparo do dente e moldagem.',
-      'Coroa provisória, quando necessária.',
-      'Prova, ajustes e instalação da coroa definitiva.',
-    ],
-    faq: [
-      { q: 'Resina ou porcelana?', a: 'A escolha depende da posição do dente, da mordida, da estética desejada e do planejamento definido na avaliação.' },
-      { q: 'A coroa dura para sempre?', a: 'Não. A durabilidade varia com os cuidados de higiene, os hábitos e as condições de cada boca.' },
     ],
   },
   {
@@ -286,6 +268,25 @@ export const treatments: Treatment[] = [
     faq: [
       { q: 'Posso retirar o alinhador?', a: 'Sim, ele é removível, mas deve ser usado pelo tempo diário que o dentista orientar para o tratamento funcionar.' },
       { q: 'Qualquer pessoa pode usar alinhador?', a: 'Não. A indicação depende da complexidade do caso e é definida na avaliação.' },
+    ],
+  },
+  {
+    slug: 'ortopedia-facial',
+    name: 'Ortopedia facial',
+    keyword: 'ortopedia facial em Maceió',
+    dentists: ['camila'],
+    ready: true,
+    intro: 'A ortopedia facial atua no desenvolvimento e no equilíbrio dos ossos e músculos da face, ajudando a guiar o crescimento adequado das arcadas e a prevenir problemas na mordida e na respiração. O tratamento é planejado de forma individualizada após avaliação.',
+    forWhom: 'Principalmente crianças e adolescentes em fase de crescimento que apresentam alterações na mordida, falta de espaço para os dentes ou desequilíbrios no desenvolvimento facial. A indicação é definida na avaliação.',
+    steps: [
+      'Avaliação clínica detalhada da face, da mordida e das funções bucais.',
+      'Solicitação de exames e documentação ortodôntica, quando necessários.',
+      'Planejamento individual e instalação do aparelho ortopédico indicado.',
+      'Acompanhamento periódico para ajustes e orientação aos responsáveis.',
+    ],
+    faq: [
+      { q: 'Qual a diferença entre ortodontia e ortopedia facial?', a: 'A ortodontia atua principalmente no posicionamento dos dentes, enquanto a ortopedia facial atua no desenvolvimento e equilíbrio das estruturas ósseas e musculares da face.' },
+      { q: 'Com que idade é indicado avaliar?', a: 'A avaliação precoce na infância permite identificar alterações ainda durante o crescimento e facilita o tratamento.' },
     ],
   },
   {

@@ -22,8 +22,8 @@ const PAIN_TEXT = 'Olá! Estou com dor de dente e preciso de atendimento de urg�
 const groups = [
   { title: 'Urgência e dor', icon: Siren, slugs: ['urgencia-odontologica-24h', 'extracao-dentaria', 'extracao-de-siso', 'restauracao-dental'] },
   { title: 'Estética do sorriso e da face', icon: Sparkles, slugs: ['clareamento-dental', 'facetas-em-resina', 'facetas-em-porcelana', 'harmonizacao-orofacial-e-botox'] },
-  { title: 'Próteses e reabilitação', icon: Crown, slugs: ['protese-fixa', 'proteses-totais-e-parciais', 'coroa-em-resina-e-porcelana'] },
-  { title: 'Ortodontia', icon: Smile, slugs: ['aparelho-ortodontico', 'alinhador-dental'] },
+  { title: 'Próteses e reabilitação', icon: Crown, slugs: ['protese-fixa-e-coroa', 'proteses-totais-e-parciais'] },
+  { title: 'Ortodontia', icon: Smile, slugs: ['aparelho-ortodontico', 'alinhador-dental', 'ortopedia-facial'] },
   { title: 'Infantil e prevenção', icon: Baby, slugs: ['odontopediatria', 'limpeza-dental'] },
 ]
 
