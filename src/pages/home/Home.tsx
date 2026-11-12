@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Clock, HeartHandshake, ClipboardCheck, Siren, Sparkles, Crown, Smile, Baby, ArrowRight } from 'lucide-react'
+import { MapPin, Clock, HeartHandshake, ClipboardCheck, Siren, Sparkles, Crown, Smile, Baby, Stethoscope, ArrowRight } from 'lucide-react'
 import Seo from '../../components/seo/Seo'
 import JsonLd from '../../components/seo/JsonLd'
 import SectionTitle from '../../components/ui/SectionTitle'
@@ -20,11 +20,12 @@ const CTA_TEXT = 'Olá! Vim pelo site e quero agendar uma avaliação.'
 const PAIN_TEXT = 'Olá! Estou com dor de dente e preciso de atendimento de urgência.'
 
 const groups = [
-  { title: 'Urgência e dor', icon: Siren, slugs: ['urgencia-odontologica-24h', 'extracao-dentaria', 'extracao-de-siso', 'restauracao-dental'] },
-  { title: 'Estética do sorriso e da face', icon: Sparkles, slugs: ['clareamento-dental', 'facetas-em-resina', 'facetas-em-porcelana', 'harmonizacao-orofacial-e-botox'] },
-  { title: 'Próteses e reabilitação', icon: Crown, slugs: ['protese-fixa-e-coroa', 'proteses-totais-e-parciais'] },
+  { title: 'Urgência e dor', icon: Siren, slugs: ['urgencia-odontologica-24h', 'extracao-dentaria', 'extracao-de-siso'] },
+  { title: 'Clínico geral', icon: Stethoscope, slugs: ['limpeza-completa', 'tratamento-periodontal', 'restauracao-dental', 'placas-de-bruxismo'] },
+  { title: 'Estética do sorriso e da face', icon: Sparkles, slugs: ['clareamento-dental', 'facetas-em-resina', 'facetas-em-porcelana', 'harmonizacao-orofacial'] },
+  { title: 'Próteses e reabilitação', icon: Crown, slugs: ['coroa-em-resina-e-porcelana', 'proteses-totais-e-parciais'] },
   { title: 'Ortodontia', icon: Smile, slugs: ['aparelho-ortodontico', 'alinhador-dental', 'ortopedia-facial'] },
-  { title: 'Infantil e prevenção', icon: Baby, slugs: ['odontopediatria', 'limpeza-dental'] },
+  { title: 'Infantil e prevenção', icon: Baby, slugs: ['odontopediatria'] },
 ]
 
 const benefits = [
