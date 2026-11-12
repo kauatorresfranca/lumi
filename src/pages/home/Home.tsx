@@ -11,7 +11,7 @@ import { team, treatments } from '../../data/treatments'
 import { track } from '../../lib/analytics'
 import styles from './Home.module.css'
 import duplaImg from '../../assets/images/dupla.jpeg'
-import luizImg from '../../assets/images/luiz.jpeg'
+import luizImg from '../../assets/images/luiz.webp'
 import camilaImg from '../../assets/images/camila.jpeg'
 
 const MAP_EMBED_SRC = site.mapsEmbed
