@@ -9,7 +9,7 @@ import TreatmentCards from '../../components/ui/TreatmentCards'
 import { site } from '../../data/site'
 import { team } from '../../data/treatments'
 import styles from './Dentist.module.css'
-import luiz from '../../assets/images/luiz.jpeg'
+import luiz from '../../assets/images/luiz.webp'
 
 const FEATURED = [
   'protese-fixa',
