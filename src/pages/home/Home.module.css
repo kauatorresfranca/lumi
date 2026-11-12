@@ -175,6 +175,6 @@
 .mapFrame { width: 100%; aspect-ratio: 16 / 7; border: 0; border-radius: var(--radius); margin: var(--space-4) 0; }
 .locActions { margin-top: var(--space-5); }
 .ctaRow { display: flex; flex-wrap: wrap; gap: var(--space-3); }
-.final .outline { border-color: var(--color-gold-light); color: #fff; }
+.final .outline { border-color: var(--color-gold-light); color: #ffffff; }
 .final .outline:hover { background: var(--color-gold-light); color: var(--color-navy); }
 .cro { margin: 0 0 var(--space-1); font-size: 0.85rem; font-weight: 600; color: var(--color-gold); }
