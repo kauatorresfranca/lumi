@@ -1,4 +1,4 @@
-import { Outlet, Link } from 'react-router-dom'
+import { Outlet, Link, ScrollRestoration } from 'react-router-dom'
 import { MapPin, Clock, Phone } from 'lucide-react'
 import { site, whatsappLink } from '../../data/site'
 import { team } from '../../data/treatments'
@@ -13,7 +13,7 @@ export default function Layout() {
       <header className={styles.header}>
         <div className={`container ${styles.bar}`}>
           <Link to="/" className={styles.brand}>
-            <img src="/simbolo.png" width={44} height={44} alt="" />
+            <img src="/img/simbolo.png" width={44} height={44} alt="" />
             <span className={styles.brandText}>
               <strong>LUMI</strong>
               <small>ODONTOLOGIA</small>
@@ -60,6 +60,7 @@ export default function Layout() {
       >
         <WhatsAppIcon size={32} />
       </a>
+      <ScrollRestoration />
     </>
   )
 }

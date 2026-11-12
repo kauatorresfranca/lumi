@@ -178,3 +178,6 @@
 .final .outline { border-color: var(--color-gold-light); color: #ffffff; }
 .final .outline:hover { background: var(--color-gold-light); color: var(--color-navy); }
 .cro { margin: 0 0 var(--space-1); font-size: 0.85rem; font-weight: 600; color: var(--color-gold); }
+.mark {
+  background: url('../../assets/images/lumi-simbolo.png') no-repeat center / contain;
+}

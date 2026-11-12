@@ -10,9 +10,9 @@ import { reviews } from '../../data/reviews'
 import { team, treatments } from '../../data/treatments'
 import { track } from '../../lib/analytics'
 import styles from './Home.module.css'
-import duplaImg from '../../assets/images/dupla.jpeg'
+import duplaImg from '../../assets/images/dupla.webp'
 import luizImg from '../../assets/images/luiz.webp'
-import camilaImg from '../../assets/images/camila.jpeg'
+import camilaImg from '../../assets/images/camila.webp'
 
 const MAP_EMBED_SRC = site.mapsEmbed
 
@@ -104,7 +104,7 @@ export default function Home() {
 
       {/* Hero */}
       <section className={styles.hero}>
-        <img className={styles.mark} src="/img/lumi-simbolo.png" alt="" width={520} height={520} decoding="async" aria-hidden="true" />
+        <img className={styles.mark} src="/img/simbolo.png" alt="" width={520} height={520} decoding="async" aria-hidden="true" />
         <div className={`container ${styles.heroInner}`}>
           <div>
             <span className="eyebrow">Urgência 24 horas · Maceió</span>

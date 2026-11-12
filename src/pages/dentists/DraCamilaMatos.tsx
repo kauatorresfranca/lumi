@@ -9,7 +9,7 @@ import TreatmentCards from '../../components/ui/TreatmentCards'
 import { site } from '../../data/site'
 import { team } from '../../data/treatments'
 import styles from './Dentist.module.css'
-import camila from '../../assets/images/camila.jpeg'
+import camila from '../../assets/images/camila.webp'
 
 const FEATURED = [
   'aparelho-ortodontico',
