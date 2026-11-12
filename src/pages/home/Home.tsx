@@ -113,15 +113,6 @@ export default function Home() {
             </p>
             <div className={styles.actions}>
               <WhatsAppButton text={CTA_TEXT} label="Agendar avaliação" />
-              <a
-                className={styles.outline}
-                href={whatsappLink(PAIN_TEXT)}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => track('whatsapp_click', { cta_label: 'hero_urgencia' })}
-              >
-                Estou com dor
-              </a>
             </div>
             <p className={styles.note}>
               Resposta rápida pelo WhatsApp · <a href={`tel:+${site.whatsapp}`} onClick={() => track('phone_click')}>ou ligue {site.whatsappDisplay}</a>
