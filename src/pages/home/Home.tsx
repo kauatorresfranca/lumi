@@ -21,16 +21,16 @@ const PAIN_TEXT = 'Olá! Estou com dor de dente e preciso de atendimento de urg�
 
 const groups = [
   { title: 'Urgência e dor', icon: Siren, slugs: ['urgencia-odontologica-24h', 'extracao-dentaria', 'extracao-de-siso', 'restauracao-dental'] },
-  { title: 'Estética do sorriso', icon: Sparkles, slugs: ['clareamento-dental', 'facetas-em-resina', 'facetas-em-porcelana', 'harmonizacao-orofacial', 'botox'] },
-  { title: 'Próteses e reabilitação', icon: Crown, slugs: ['protese-fixa', 'proteses-totais-e-removiveis', 'coroa-em-resina-e-porcelana'] },
+  { title: 'Estética do sorriso e da face', icon: Sparkles, slugs: ['clareamento-dental', 'facetas-em-resina', 'facetas-em-porcelana', 'harmonizacao-orofacial-e-botox'] },
+  { title: 'Próteses e reabilitação', icon: Crown, slugs: ['protese-fixa', 'proteses-totais-e-parciais', 'coroa-em-resina-e-porcelana'] },
   { title: 'Ortodontia', icon: Smile, slugs: ['aparelho-ortodontico', 'alinhador-dental'] },
   { title: 'Infantil e prevenção', icon: Baby, slugs: ['odontopediatria', 'limpeza-dental'] },
 ]
 
 const benefits = [
-  { icon: Clock, title: 'Urgência 24 horas', text: 'Dor, dente quebrado ou inchaço? Chame no WhatsApp a qualquer hora, inclusive à noite e aos domingos.' },
-  { icon: HeartHandshake, title: 'Atendimento humanizado', text: 'Calma, conforto e explicação em cada etapa, inclusive para quem tem medo ou ansiedade de ir ao dentista.' },
-  { icon: ClipboardCheck, title: 'Plano claro', text: 'Você entende o que precisa ser feito e em que ordem antes de começar qualquer tratamento.' },
+  { icon: Clock, title: 'Urgência 24 horas', text: 'Dor, dente quebrado ou inchaço? Chame no WhatsApp a qualquer hora, inclusive à noite e aos finais de semana.' },
+  { icon: HeartHandshake, title: 'Atendimento humanizado', text: 'Calma, conforto e explicação em cada etapa, especialmente para quem tem medo ou ansiedade de ir ao dentista.' },
+  { icon: ClipboardCheck, title: 'Plano de tratamento personalizado', text: 'Você entende suas necessidades, as etapas do tratamento e as possibilidades disponíveis para cuidar do seu sorriso com segurança.' },
 ]
 
 const doctors = [
@@ -53,7 +53,7 @@ const doctors = [
 const steps = [
   { title: 'Chame no WhatsApp', text: 'Conte o que você precisa. Em caso de urgência, respondemos a qualquer horário.' },
   { title: 'Faça sua avaliação', text: 'O dentista examina, ouve você e explica tudo com clareza.' },
-  { title: 'Siga com seu plano', text: 'Você sai sabendo o tratamento indicado, as etapas e o que esperar de cada uma.' },
+  { title: 'Siga com seu plano de tratamento', text: 'Você sai sabendo o tratamento indicado, as etapas e o que esperar de cada uma.' },
 ]
 
 const faq = [
@@ -109,7 +109,7 @@ export default function Home() {
             <span className="eyebrow">Urgência 24 horas · Maceió</span>
             <h1>Dentista em Maceió: do alívio da dor ao sorriso que você quer</h1>
             <p className={styles.lead}>
-              Dor, dente quebrado ou vontade de renovar o sorriso? Fale com a gente pelo WhatsApp e seja atendido por dentistas que explicam cada etapa do tratamento.
+              Unimos tecnologia e atendimento humanizado para cuidar do seu sorriso com excelência, conforto e confiança.
             </p>
             <div className={styles.actions}>
               <WhatsAppButton text={CTA_TEXT} label="Agendar avaliação" />
