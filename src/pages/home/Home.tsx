@@ -104,7 +104,6 @@ export default function Home() {
 
       {/* Hero */}
       <section className={styles.hero}>
-        <img className={styles.mark} src="/img/simbolo.png" alt="" width={520} height={520} decoding="async" aria-hidden="true" />
         <div className={`container ${styles.heroInner}`}>
           <div>
             <span className="eyebrow">Urgência 24 horas · Maceió</span>
